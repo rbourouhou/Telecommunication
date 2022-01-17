@@ -1,0 +1,179 @@
+/*page ecran */
+/* Large desktop */
+@media (min-width: 1200px) { 
+   body {
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: green;
+        }
+        }
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1199px) { 
+   body {
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: purple;
+        }
+        }
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+   body {
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: blue;
+        }
+        }
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+   body {
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color: red;
+        }
+        }
+   body {
+        background-color:white;
+        margin:0px;
+        padding:0px;
+        text-align:center;
+        }
+  #wrap { /*# sert à référer à un id de la page web */
+        margin:auto; /* centre automatiquement la section wrap dans l'écran*/
+        padding:0px;
+        max-width:960px;
+        }
+ header {
+        background-color:#9B9691;
+        margin:0px;
+        padding-bottom: 20px; 
+        border:3px solid gray;
+        }
+header h1{
+        color:white;
+        font-family:"Cooper Black","Comic Sans MS",Tahouma,Verdana;
+        font-size:5em;
+        margin:10px;
+        padding: 10px;
+        }
+    nav {
+        background:white;
+        }
+ nav ul {
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 3px solid gray;
+        list-style-type: none;
+        margin: 1px;
+        padding-top:1%;
+        padding-bottom:1%;
+        padding-left: 0px;
+        }
+nav ul li{
+        margin-left:10px;
+        margin-right:10px;
+        }
+nav ul li a {
+        color:#9B9691;
+        font-size:1.3em;
+        text-decoration:none; /* ôte le souligné */
+        }
+nav ul li a:hover{
+        color:green; 
+        }
+   main {
+        background-color:white;
+        padding:0px;
+        vertical-align:top;
+        }
+main h2 {
+        color:#9B9691; 
+        font-family:Arial, Tahoma, Verdana, Anel, Calibri;
+        font-size: 1.2em;
+        }
+main h3 {
+        color:#9B9691; 
+        font-family:Arial, Tahoma, Verdana, Anel, Calibri;
+        font-size: 1.5em;
+        }
+main h4 {
+        color:#9B9691; 
+        font-family:Calibri,Arial, Tahoma, Verdana, Anel; 
+        font-size: 1.4em;
+        }
+ main a {
+        font-family:Arial, Tahoma, Verdana, Anel, Calibri;
+        font-size: 2em;
+        }
+ main p {
+        color:black;
+        font-family:Verdana,Tohoma,Calibri,Ariel;
+        font-size: 1.1em;
+        text-align: justify;
+        }
+main ul li a {
+        color:black;
+        font-family: Arial, Tahoma, Verdana, Anel, Calibri;
+        font-size: 1.2em;
+        margin: 10px;
+        text-align:left;
+        }
+ iframe {
+        width:560px;
+        height:315px;
+        }
+        /* pour la page FAQ */
+.accordion {
+            font-family: Arial, Tahoma, Verdana, Anel, Calibri;
+            background-color: rgb(255, 255, 255); 
+            color: #525143;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: 0.10s;
+            font-size: 1.2em
+           }
+.accordion p {
+              font-family: Arial, Tahoma, Verdana, Anel, Calibri;
+           }
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+           background-color: #ccc;
+           }
+.panel {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+       }
+.panel p {
+          font-family: Tahoma, Verdana, Calibri, Arial;
+          font-size: 1.3em;
+         }
+    footer{
+           list-style-type: none;
+           padding-top: 2%;
+           background-color: #9B9691;
+           background-attachment: fixed;
+           background-size: cover; 
+           text-align: center;
+           margin:0px;
+           padding-bottom: 10px;
+           border:3px solid gray;
+          }
+    footer a{
+             color:black; 
+             font-size: 1.3em;
+             font-weight: bold;
+             text-decoration: none;
+             font-family:Arial,"Comic Sans MS",Calibri,Arial,Verdana;
+             margin: 50px 50px 50px 50px;
+            }
+    footer p{
+             color:#B52121;
+             font-family: "Arial Black","Comic Sans MS", tahoma, Verdana, Anel, Calibri;
+             font-size: 0.7em;
+             margin: 20px;
+            }

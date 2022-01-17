@@ -1,0 +1,97 @@
+<!DOCTYPE html>  <!--version du html-->
+<html>  <!--fichier html-->
+ <head>  <!--infos pour le navigateur, non visible-->
+    <title> Titre de la page, onglet </title>
+    <meta charset="UTF-8"/>  <!--encodage-->
+    <meta name="viewport" content="width=device-width;maximum-scale=1; minimum-scale=1;"/>  <!--adabtabilité aux écrans-->
+    <meta name="description" content="description,mots-clés pour engin de recherche, max 155 caractère, réferencement" />
+    <link rel="stylesheet" type="text/css" href="../css/style1.css"/>  <!--lien avec css-->
+ </head> 
+
+<!--*************************************************************************************************************************-->
+
+ <body> <!--début de page -écran visible à l'usage-->
+  <section id="wrap">
+   <header> <!--en-tête de page-->
+    <h1> F.A.Q </h1> <!--Titre de niveau 1 -->
+   </header>
+   <!--*****************************************************************-->
+   <nav> <!--menu de navigation-->
+     <ul> <!--liste à puces-->
+      <li><a href="../index.html"> Accueil </a> </li> <!-- li= liste item, puce. a=hyperlien -->
+      <li><a href="../page/mets.html"> Mets et viennoiseries </a></li>
+      <li><a href="../page/paysages.html"> Paysages </a></li>
+      <li><a href="../page/tenues.html"> Tenues traditionnelles </a></li>
+      <li><a href="../page/soccer.html"> Sport favori </a></li>
+      
+     </ul>
+   </nav>
+
+ <!--*******************************************************************-->
+
+   <main> <!--contenu principal de la page-->
+   
+   <img src="../image/interrogation.png" />
+   <button class="accordion"> Quels sont les endroits les plus visités? </button>
+ 
+    <div class="panel">
+      <p>les wilayas les plus visités sont : Alger, Béjaia, Annaba, Oran, timimoune, Bachar, Tamanghasset..</p>
+       </div>
+
+  <button class="accordion"> Les mets favoris en algériens? </button>
+    <div class="panel">
+      <p> Le couscous, Dolma, Tajine zitoune <p>
+    </div>
+    
+    <button class="accordion"> Quels sont les monnaies qu’on peut échanger pour du Dinar Algérien? </button>
+    <div class="panel">
+      <p> Euro, Dollar US, Dollar Canadians. <p>
+    </div>
+    
+    <button class="accordion"> Comment peut-on se déplacer en Algérie? </button>
+    <div class="panel">
+      <p> Voiture, Bus, Metro, Tramway <p>
+    </div>
+    
+    <button class="accordion"> Quelle est la meilleure saison pour visiter l'Algérie? </button>
+    <div class="panel">
+      <p> Le printemps <p>
+    </div>
+    
+    <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script> 
+           
+   </main>
+
+<!--*******************************************************************-->
+
+    <footer> <!--pied de page-->
+          <a href="../page/plandusite.html">Plan du site</a>
+          <a href="../page/apropos.html">À propos</a>
+          <a href="../page/sitesinterets.html">Sites d’intérêts</a>
+          <a href="../page/faq.html">FAQ</a>
+  
+          <p><a href="mailto:bourouhou.r@csdm.qc.ca"> <img src="../image/contact.png"></a></p>
+
+          <a href="https://www.facebook.com/profile.php?id=100010799925877" target="_blank"> <img src="../image/facebook.png"></a>
+          <a href="https://twitter.com/BourouhouR" target="_blank"> <img src="../image/twitter.png"></a>
+          <a href="https://www.linkedin.com/feed/" target="_blank"> <img src="../image/linkedin.png"></a>
+          <p>Vous pouvez vous connecter à ce site en utilisant les navigateurs suivants: Goggle Chrome, Mozilla Firefox, Edge, Opera, ou Safari.</p>	
+    </footer>
+  </section>
+ </body>
+</html>
